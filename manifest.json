@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "SaaS integrator",
+    "version": "0.1.0",
+    "description": "Integrates SaaS projects",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "options.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*/merge_requests/*"
+            ],
+            "css": [
+                "content-style.css"
+            ],
+            "js": [
+                "content-script.js"
+            ],
+            "all_frames": false,
+            "match_origin_as_fallback": false,
+            "match_about_blank": false,
+            "run_at": "document_end",
+            "world": "ISOLATED"
+        }
+    ]
+}

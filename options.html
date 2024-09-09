@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaaS integrator options</title>
+    <style>
+        body {
+            min-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        main, section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        section input {
+            padding: 5px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        footer #add {
+            padding: 0 15px;
+            font-size: 20px;
+        }
+
+        footer #save {
+            flex: 1;
+        }
+        
+
+        footer button {
+            margin-top: -5px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main></main>
+    <div id="status"></div>
+    <footer>
+        <button id="add">+</button>
+        <button id="save">Save</button>
+    </footer>
+    <script src="options.js"></script>
+</body>
+
+</html>
