@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "SaaS integrator",
-    "version": "0.1.0",
-    "description": "Integrates SaaS projects",
+    "name": "Gitlab integrator",
+    "version": "0.2.0",
+    "description": "Integrates collaboration projects into Gitlab",
     "permissions": [
         "activeTab",
         "storage"
