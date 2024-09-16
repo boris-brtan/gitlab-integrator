@@ -1,7 +1,7 @@
 function createConfig(main, name = '', prefix = '', url = '') {
     const section = document.createElement('section')
     main.append(section)
-    ;[[name, 'Project name'], [prefix, 'Prefix'], [url, 'SaaS url']].forEach(([value, placeholder]) => {
+    ;[[name, 'URL Content (regex)'], [prefix, 'Search string (regex)'], [url, 'SaaS url (opt: $1 placeholder)']].forEach(([value, placeholder]) => {
         const field = document.createElement('input')
         field.placeholder = placeholder
         field.value = value
